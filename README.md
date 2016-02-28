@@ -1,3 +1,15 @@
+# Instructions to get started
+
+```
+django-admin startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile  electionsite
+cd electionsite
+pip install -r requirements.txt
+python manage.py migrate
+python manage.py runserver
+
+python manage.py startapp engine
+```
+
 # Heroku Django Starter Template
 
 An utterly fantastic project starter template for Django 1.9.
