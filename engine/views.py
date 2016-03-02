@@ -1,5 +1,7 @@
 from django.shortcuts import render
-from django.http import HttpResponse
 
 def index(request):
-    return render(request, 'hello.html')
+    # Add a new model to the database
+    
+    # Fetch all from the database
+    return render(request, 'engine/hello.html')
