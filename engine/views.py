@@ -2,6 +2,7 @@ from django.shortcuts import render
 from models import Author, Book
 from time import gmtime, strftime
 import json
+
 def index(request):
     return render(request, 'engine/hello.html', {})
 
