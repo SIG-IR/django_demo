@@ -1,10 +1,14 @@
 from django.contrib import admin
-from models import Author, Book
+from models import State, Candidate, Tweet
 
-@admin.register(Author)
-class AuthorAdmin(admin.ModelAdmin):
+@admin.register(State)
+class StateAdmin(admin.ModelAdmin):
     pass
 
-@admin.register(Book)
-class BookAdmin(admin.ModelAdmin):
+@admin.register(Candidate)
+class CandidateAdmin(admin.ModelAdmin):
+    pass
+    
+@admin.register(Tweet)
+class TweetAdmin(admin.ModelAdmin):
     pass
