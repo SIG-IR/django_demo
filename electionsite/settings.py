@@ -26,8 +26,6 @@ SECRET_KEY = "9c*p1xn^c-ox6*9)r7=c9i@%fy^3_63x+djl5#bp#un!s=&*ql"
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-# Application definition
-
 INSTALLED_APPS = (
     'django.contrib.admin',
     'django.contrib.auth',
@@ -35,7 +33,10 @@ INSTALLED_APPS = (
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'engine'
+    'engine', # Whenever you add your own app (i.e folder), make sure to add it to the tuple here too!
+    'portal',
+    'bluebird',
+    'alchemist'
 )
 
 MIDDLEWARE_CLASSES = (
@@ -71,21 +72,21 @@ TEMPLATES = (
 WSGI_APPLICATION = 'electionsite.wsgi.application'
 
 
-# Database
-# https://docs.djangoproject.com/en/1.9/ref/settings/#databases
-
 # DATABASES = {
 #     'default': {
 #         'ENGINE': 'django.db.backends.sqlite3',
 #         'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
 #     }
 # }
+
+# Above is commented out so we don't use sqlite3, we use Postgres (below) instead
+
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'sigirtest',
+        'NAME': 'sigirtest', # name of database
         'USER': 'ssapra',
-        'PASSWORD': 'password',
+        'PASSWORD': 'password', # default password should be password, if not then message me
         'HOST': 'localhost',
         'PORT': '',
     }

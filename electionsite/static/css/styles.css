@@ -1,0 +1,90 @@
+h1, p, a, div{
+  font-family:'Open Sans';
+}
+p, a {
+  font-weight: 300;
+}
+body {
+  background-color: #F5F8FA;
+}
+#info {
+  position:absolute;
+  top: 10px;
+  left: 10px;
+}
+.hidden{
+  display: none;
+}
+.centered{
+  text-align: center;
+}
+.states {
+	stroke: #fff;
+	stroke-width: 1px;
+  transition: 0.3s all;
+  -webkit-transition: 0.3s all;
+}
+.states:hover {
+  stroke: #fff;
+  stroke-width: 5px;
+}
+.states.active{
+  stroke-width: 7.5px;
+}
+
+.x.axis line {
+  stroke: #fff;
+}
+
+/*.x.axis .minor {
+  stroke-opacity: .5;
+}*/
+
+.axis path,
+.axis line {
+  fill: none;
+  stroke: #000;
+  shape-rendering: crispEdges;
+}
+
+.tooltip {   
+  position: absolute;
+  font: 1em 'Open Sans';
+  background:rgba(0,0,0,0.9);
+  border: 1px solid grey;
+  border-radius: 5px;
+  width: auto;
+  padding: 4px;
+  color: white;
+}
+.left{
+  text-align: left;
+  padding: 0;
+  margin: 0;
+}
+.map, .chart, .stateData{
+  vertical-align: top;
+}
+.graphics{
+}
+.graphics, .stateData {
+  width: 47%;
+  display: inline-block;
+}
+.stateData{
+  margin-left: 1em;
+  max-height: 750px;
+  overflow: scroll;
+}
+.singleTweet {
+  background-color: #FFFFFF;
+  margin: 0.3em 0;
+  border-radius: 4px;
+  border: 1px solid #D3D3D3;
+  padding: 0 0.25em;
+}
+.singleTweet > b{
+  display: block;
+  margin: 0;
+  padding: 0.2em;
+}
