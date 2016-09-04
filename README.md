@@ -1,7 +1,10 @@
 # Instructions for you to get started
-- Don't clone this repo! The below commands will teach you how to make it yourself from scratch (at least how to get started)
+
+The below commands will teach you how to make it yourself from scratch (at least how to get started)
+Clone this repo only if you want to see the finished project. 
+
 ```
-django-admin startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile  electionsite
+django-admin startproject --template=https://github.com/heroku/heroku-django-template/archive/master.zip --name=Procfile electionsite
 cd electionsite
 pip install -r requirements.txt
 python manage.py migrate
@@ -14,7 +17,9 @@ python manage.py runserver
 git clone https://github.com/sameetandpotatoes/Django-Tutorial
 cd Django-Tutorial
 pip install -r requirements.txt
+cp secrets.py.example secrets.py.example
 ```
+Fill in `secrets.py` with the AlchemyAPI keys and Twitter API credentials.
 
 Change `settings.py` and input your relevant Postgres database credentials, and `engine/seed.py` to change the candidates you're searching for
 
